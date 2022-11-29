@@ -59,7 +59,7 @@ const Form = () => {
     return (
 
         <>
-            <div className='AllForm'>
+            <div className='Form'>
                 <h2 className='titleform'>New Publications Entry Form</h2> <br />
                 <p>¡Remeber! You must fill in all fields!</p><br /><br />
                 <br />

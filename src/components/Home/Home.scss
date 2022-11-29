@@ -7,7 +7,7 @@ div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    display: inline-block;
+    display: inline-table;
     margin: 35px 4px 4px 29px;
     border-radius: 10px;
     background-image: url(../../assets/realistic-old-paper-texture_23-2149124920.webp);
@@ -15,6 +15,11 @@ div {
     background-repeat: no-repeat;
     
 
+    a{
+        font-family: 'Bodonitown', sans-serif;
+        font-size: 30px;
+        
+    }
 
 
     h2 {
