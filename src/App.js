@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import { GlobalProvider } from './context/GlobalState';
 import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 
+
 function App() {
 
   return (

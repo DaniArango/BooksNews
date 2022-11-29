@@ -1,8 +1,9 @@
 import React from 'react'
+import '../Footer/Footer.scss'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>Copyright © by Daily Prophet  </div>
   )
 }
 

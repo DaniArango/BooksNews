@@ -14,10 +14,10 @@ const News = () => {
     
     return (
       <div key={elementNewsBook.id}>
-        <div className="News">
-          <p className="Tittle">{elementNewsBook.title}</p>
-          <p className="Body">{elementNewsBook.author}</p>
-          <img src={elementNewsBook.book_image } /> <br />
+        <div>
+          <p >{elementNewsBook.title}</p>
+          <p >{elementNewsBook.author}</p>
+          <img src={elementNewsBook.book_image } width="350" height="500" alt=""  /> <br />
           <a target="_blank" href= {elementNewsBook.amazon_product_url}>Buy Me!</a>
 
         </div>

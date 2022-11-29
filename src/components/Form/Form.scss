@@ -1,0 +1,50 @@
+@import url('https://fonts.cdnfonts.com/css/bodonitown');
+
+
+
+
+ form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-style: outset;
+    border-radius: 20px 0px 20px 0px;
+    padding: 20px;
+    margin: 5% 13%;
+    
+
+    input {
+
+        
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #e8e8e8;
+        box-shadow: 6px 6px 12px #ab6618,
+            -6px -6px 12px #e67c2b;
+        font-size: medium;
+        font-weight: bold;
+
+        p{
+            font-family: 'Bodonitown', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #e8e8e8;
+        box-shadow: 6px 6px 12px #2d7319,
+            -6px -6px 12px #1daa56;
+        font-size: medium;
+        font-weight: bold;
+        max-width: 100px;
+        cursor: pointer;
+
+
+
+    }
+
+}

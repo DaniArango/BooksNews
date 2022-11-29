@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../Form/Form.scss'
 
-// import './Form.scss'
 
 const Form = () => {
     let navigate = useNavigate()
@@ -12,7 +12,7 @@ const Form = () => {
         title: "",
         body: "",
         img: "",
-        url:"",
+        url: "",
 
     })
 
@@ -20,7 +20,7 @@ const Form = () => {
         title: "",
         body: "",
         img: "",
-        url:"",
+        url: "",
     };
 
 
@@ -29,7 +29,7 @@ const Form = () => {
     };
 
     useEffect(() => {
-        if (data.title.length < 1 || data.body.length < 1 || data.img.length < 1 || data.url.length < 1 ) {
+        if (data.title.length < 1 || data.body.length < 1 || data.img.length < 1 || data.url.length < 1) {
             setMessage("Thanks To Your Help")
             setBtnDisable(true)
         } else {
@@ -59,54 +59,55 @@ const Form = () => {
     return (
 
         <>
-        <div className='Form'> <h2 className='titleform'>New Publications Entry Form</h2>
-            <span className='textform'>¡Remeber! You must fill in all fields!</span>
-            <br />
-            <br />
-            <form onSubmit={handleSubmit}>
-                <input type="text"
-                    placeholder="Title"
-                    value={data.title}
-                    onChange={handleInputChange}
-                    name="title"
-                />
+            <div className='AllForm'>
+                <h2 className='titleform'>New Publications Entry Form</h2> <br />
+                <p>¡Remeber! You must fill in all fields!</p><br /><br />
                 <br />
                 <br />
-                <input
-                    type="text"
-                    placeholder="Author"
-                    value={data.body}
-                    onChange={handleInputChange}
-                    name="body"
-                />
-                <br />
-                <br />
-                <input
-                    type="text"
-                    placeholder="Image"
-                    value={data.img}
-                    onChange={handleInputChange}
-                    name="img"
-                />
-                <br />
-                <br />
-                <input type="text"
-                    placeholder="URL"
-                    value={data.url}
-                    onChange={handleInputChange}
-                    name="url"
-                />
-                <br />
-                <br />
-                <button className='button' type='submit' disabled={btnDisable}>
-                    Send 
-                </button>
-            </form>
-            <p>{visible ? msg : <p>Your news item has been created successfully <i>NewsBooks</i>
-            </p>}
-            </p>
-        </div>
-        
+                <form onSubmit={handleSubmit}>
+                    <input type="text"
+                        placeholder="Title"
+                        value={data.title}
+                        onChange={handleInputChange}
+                        name="title"
+                    />
+                    <br />
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Author"
+                        value={data.body}
+                        onChange={handleInputChange}
+                        name="body"
+                    />
+                    <br />
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Image"
+                        value={data.img}
+                        onChange={handleInputChange}
+                        name="img"
+                    />
+                    <br />
+                    <br />
+                    <input type="text"
+                        placeholder="URL"
+                        value={data.url}
+                        onChange={handleInputChange}
+                        name="url"
+                    />
+                    <br />
+                    <br />
+                    <button className='button' type='submit' disabled={btnDisable}>
+                        Send
+                    </button>
+                </form>
+                <p>{visible ? msg : <p>Your news item has been created successfully <i>NewsBooks</i>
+                </p>}
+                </p>
+            </div>
+
         </>
     );
 };

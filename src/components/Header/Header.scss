@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.cdnfonts.com/css/spqr');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+nav {
+
+    a {
+        all: unset;
+      }
+
+    h1{
+        font-family: 'Harry Potter', sans-serif;
+        font-size: 150px;
+        display: flex;
+        justify-content: center;
+
+        padding: 20px;
+        
+    }
+
+    div{
+        cursor: pointer;
+        display: flex;
+        text-align: center;
+        font-family: 'SPQR', sans-serif;
+        font-size: 30px;
+    
+    }
+
+    
+
+}
